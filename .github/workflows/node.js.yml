@@ -18,8 +18,8 @@ jobs:
         port: ${{ secrets.SSH_PORT }}
         script: |
           sudo su
-          cd node-github-demo/TestingRepo
-          sudo chown -R $USER: .
+          sudo chown azureuser: node-github-demo/TestingRepo -R
+          cd node-github-demo/TestingRepo          
           git pull origin master           
           pm2 restart main
           
