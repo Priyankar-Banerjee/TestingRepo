@@ -19,5 +19,6 @@ jobs:
         script: |
           sudo su
           cd node-github-demo/TestingRepo
-          git pull           
-          pm2 restart main.js
+          git pull origin master           
+          pm2 restart main
+          
