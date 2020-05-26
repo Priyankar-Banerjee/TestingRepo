@@ -19,6 +19,7 @@ jobs:
         script: |
           sudo su
           cd node-github-demo/TestingRepo
+          sudo chown -R $USER: .
           git pull origin master           
           pm2 restart main
           
