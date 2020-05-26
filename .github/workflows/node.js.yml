@@ -20,4 +20,4 @@ jobs:
           sudo su
           cd node-github-demo/TestingRepo
           git pull           
-          pm2 start main.js
+          pm2 restart main.js
